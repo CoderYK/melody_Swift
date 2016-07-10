@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MusicCell" id="KGk-i7-Jjw" customClass="MusicListCell" customModule="melody" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jay.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NGP-J7-jHK">
+                        <rect key="frame" x="15" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="RlB-33-0Z6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAi-0E-cvb">
+                        <rect key="frame" x="68" y="10" width="40" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAi-Hs-bjp">
+                        <rect key="frame" x="68" y="33" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BAi-Hs-bjp" firstAttribute="leading" secondItem="NGP-J7-jHK" secondAttribute="trailing" constant="13" id="5yb-yH-tOb"/>
+                    <constraint firstItem="BAi-Hs-bjp" firstAttribute="bottom" secondItem="NGP-J7-jHK" secondAttribute="bottom" id="Ghz-pN-zBA"/>
+                    <constraint firstItem="NGP-J7-jHK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="HJz-xl-4Co"/>
+                    <constraint firstAttribute="bottom" secondItem="NGP-J7-jHK" secondAttribute="bottom" constant="9" id="HN1-4X-szh"/>
+                    <constraint firstItem="NGP-J7-jHK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="M7i-YV-0ao"/>
+                    <constraint firstItem="qAi-0E-cvb" firstAttribute="top" secondItem="NGP-J7-jHK" secondAttribute="top" id="cck-1d-EkH"/>
+                    <constraint firstItem="qAi-0E-cvb" firstAttribute="leading" secondItem="NGP-J7-jHK" secondAttribute="trailing" constant="13" id="yQC-d2-xoC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="iconImageView" destination="NGP-J7-jHK" id="6cG-Mh-zT6"/>
+                <outlet property="musicNameLabel" destination="qAi-0E-cvb" id="eVW-ZL-y1k"/>
+                <outlet property="singerNameLabel" destination="BAi-Hs-bjp" id="ydx-Yw-sdc"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="jay.jpg" width="350" height="350"/>
+    </resources>
+</document>
